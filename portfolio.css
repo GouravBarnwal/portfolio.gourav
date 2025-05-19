@@ -1,0 +1,271 @@
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* dark overlay */
+url("https://cdn.photoroom.com/v1/assets-cached.jpg?path=backgrounds_v3/black/Photoroom_black_background_extremely_fine_texture_only_black_co_c100e1e4-63a9-4adc-9794-202888321104.jpg") ;
+ background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: #9c7b7b;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style-type: none;
+        margin: 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+      nav ul li a:hover {
+        color: rgb(37, 1, 46);;
+        font-size: 1.2rem;
+        
+
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 160px 0;
+        align-items: center;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 2.6rem;
+        margin: 30px 0;
+      }
+      .leftsection .btn{
+        padding: 12px;
+        background: #370346bb;
+        color: rgb(255, 255, 255);
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .leftsection .buttons{
+        padding: 50px 0 ;
+      }
+      .purple {
+        color: rgb(100, 7, 112);
+      }
+      .textgray {
+        color: gray;
+      }
+      #element {
+        color: rgb(100, 7, 112);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 77vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 120px;
+      }
+      .grv-img {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .image-top{
+        width: 23px;
+        top: -32px;
+        position: relative;
+        left: -9px;
+      }
+      .vertical-title{
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+      }
+      .vertical-desc{
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+        
+      }
+      footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 -1px 5px rgba(225, 31, 31, 0.1); 
+}
+       .footer{
+        display: flex;
+        background-color:grey ;
+        padding: auto;
+        justify-content: space-evenly;
+       } 
+
+       .footer ul{
+        list-style: none;
+       }
+
+       .footer > div{
+        width: 223px;
+       }
+
+       footer .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+       }  
+  .dropdown button{
+    background-color: #9c7b7b;
+    font-size: 16px;
+    border-color: #9c7b7b;
+    border-inline-color: white;
+    
+  }
+/* Basic nav style (if not already defined) */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+/* Dropdown styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #9c7b7b; /* dark purple */
+  padding: 10px;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+.dropdown-content li {
+  padding: 5px 10px;
+}
+
+.dropdown-content li a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: hover effects */
+.dropdown-content li a:hover {
+  background-color: #f7f3f3;
+  border-radius: 3px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+/* Common dropdown style */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #9c7b7b; /* dark purple */
+  padding: 10px;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 200px;
+}
+
+.dropdown-c li {
+  padding: 5px 10px;
+  color: white;
+}
+
+.dropdown-c li a {
+  color: white;
+  text-decoration: none;
+}
+
+.grv-img {
+  width: 500px;           
+  height: 500px;          
+  object-fit: cover;      /* Prevent image distortion */
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+}
+
+/* Glow effect on hover */
+.grv-img:hover {
+  box-shadow: 0 0 25px rgba(75, 0, 130, 0.8); /* Purple glow */
+  transform: scale(1.03);
+}
+
+.rightsection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-first h2 {
+  white-space: nowrap;           /* Prevent line breaks */
+  font-size: 1.5rem;             /* Adjust size as needed */
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  text-align: center;      /* Optional: show ... if text overflows */
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;               /* Allows wrapping for other columns */
+  gap: 20px;
+}
+
+.footer-first {
+  flex: 1;
+  min-width: 200px;
+}

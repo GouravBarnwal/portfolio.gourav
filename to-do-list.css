@@ -1,0 +1,123 @@
+html {
+  height: 100%;
+  background: #fff9c4;
+  color: black;
+  font-size: 18px;
+  padding: 100px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+* {
+  font-family: "PT Serif Caption", serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.text-center {
+  background: rgb(232, 232, 226);
+}
+.button-container {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.btn-primary {
+  border: #333;
+  outline: #000;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  background-color: #333;
+}
+
+.btn-primary::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: 333;
+  left: 0%;
+  top: 0%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.btn-primary:active::after{
+    background: transparent;
+}
+
+.btn-primary:active{
+    color: #000;
+    font-weight: bold;
+}
+/* button effects */
+.btn-primary {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: 333;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #ff00c8,
+    #ff0000
+  );
+  background-size: 400% 400%;
+  animation: gradientPulse 4s linear infinite;
+  animation-play-state: paused;
+}
+
+.btn-primary:hover {
+  color: white;
+  transform: translateY(-3px);
+}
+
+.btn-primary::before{
+    opacity: 1;
+    animation-play-state: running;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradientPulse{
+    0%{
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.btn-primary:active{
+    transform: translate(-1px);
+}
