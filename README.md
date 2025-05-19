@@ -1,1 +1,154 @@
-# portfolio.gourav
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gourav - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="portfolio.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Gourav's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+<li class="dropdown">
+  <a href="#">Projects</a>
+  <ul class="dropdown-content">
+    <li><a href="clock.project2.html" target="_blank">Clock</a></li>
+    <li><a href="to-do-list.html" target="_blank">To-Do-List</a></li>
+  </ul>
+</li>
+
+
+</div>
+
+
+</div>
+<li class="dropdown">
+  <a href="#">Contact Me</a>
+  <ul class="dropdown">
+    <li><strong>Phone:</strong> <a href="tel:8809210035">8809210035</a></li>
+    <li><strong>Email:</strong> <a href="mailto:barnwalgourav547@gmail.com">barnwalgourav547@gmail.com</a></li>
+  </ul>
+</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My name is <span class="purple">Gourav</span>, A
+          <span id="element"></span>
+          <div class="buttons">
+<a href="Gourav_Barnwal_Resume.pdf" class="btn" download>Download Resume</a>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img class="grv-img" src="for portfolio.jpg" alt="" />
+        </div>
+      </section>
+      <hr
+        style="border: 0; background: #9c97f1; height: 0.4px; margin: 40px 84px"
+      />
+      <section class="secondSection">
+        <span class="textgray"> What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="dsa.webp" alt="" />
+            <div class="vertical-title">DSA with Java</div>
+            <div class="vertical-desc">
+              Learnt Java in my 1st year and worked with in DSA and solved few questions on hackerrank.
+              
+            </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="frontend.jpeg" alt="" />
+            <div class="vertical-title">Frontend Developer</div>
+            <div class="vertical-desc">
+              Had gone through a tough time playing with all the three languages HTML, CSS & JavaScript.
+              Made Projects as u can refer them on the above of the page.  
+              
+            
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="python img.jpeg" alt="" />
+            <div class="vertical-title">Python excluding libraries</div>
+            <div class="vertical-desc">
+            Have a good knowledge about python. 
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="internship.webp" alt="" />
+            <div class="vertical-title">Internship</div>
+            <div class="vertical-desc">
+              Had done my internship in my second year in Ranchi, at CODETECH.
+
+              Date : June 2024 to July 2024
+              Domain : Web Development.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="Communication-Skills.png" alt="" />
+            <div class="vertical-title">Communication & Problem Solving</div>
+            <div class="vertical-desc">
+             Good at team work and at communication and problem solving. And in future will be more capable for it too.
+            </div>
+          </div>
+          <div class="vertical">
+        
+          </div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+          <div class="footer-first">
+              <h2>Gourav's Developer Portfolio</h2>
+          </div>
+    
+      </div>
+      <div class="footer-rights">
+          Copyright &#169; gouravsportfolio.com  |  All rights reserved
+      </div>
+  </footer>
+</body>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Frontend developer",
+          "Graphic designer",
+          "Gamer",
+          "Problem Solver.",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
